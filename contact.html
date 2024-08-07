@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Student Portfolio</title>
+    <style>
+          nav{
+    padding-top:25px;
+    padding-left:800px;
+    font-size: 200%;
+}
+a{
+    text-decoration-line:none;
+    color: #fff;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url(backgroung.jpg);
+            background-size: cover;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .contact-form, .contact-details {
+            flex-basis: 48%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>&nbsp;
+			<a href="about.html">About</a>&nbsp;
+			<a href="skill.html">Skill</a>&nbsp;
+			<a href="contact.html">Contact</a>&nbsp;
+        </nav>
+        <h1>Contact Me</h1>
+        <p>Let's connect and create something amazing together!</p>
+    </header>
+    <div class="container">
+        <div class="contact-info">
+            <div class="contact-form">
+                <h2>Send me a message</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h2>Get in touch</h2>
+                <p>Email: student@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 University Ave, College Town, ST 12345</p>
+                <div class="social-links">
+                    <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="watsapp.jpg" alt="Watsapp"></a>
+                    <a href="#"><img src="github.jpg" alt="GitHub"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

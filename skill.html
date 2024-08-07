@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Student Portfolio</title>
+    <style>
+          nav{
+    padding-top:25px;
+    padding-left:800px;
+    font-size: 200%;
+}
+a{
+    text-decoration-line:none;
+    color: #fff;
+}
+        body {
+            background-image:url(backgroung.jpg);
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5ff;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-image:url(backgroung.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .skill-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .skill-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .skill-content {
+            padding: 25px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .skill-level {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .progress-bar {
+            background-color: #ecf0f1;
+            height: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 1s ease-in-out;
+        }
+        .html-progress { background-color: #e74c3c; }
+        .css-progress { background-color: #3498db; }
+        .python-progress { background-color: #2ecc71; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>&nbsp;
+        <a href="about.html">About</a>&nbsp;
+        <a href="skill.html">Skill</a>&nbsp;
+        <a href="contact.html">Contact</a>&nbsp;
+    </nav>
+    <header>
+        <h1>My Coding Skills</h1>
+        <p>Passionate about web development and programming</p>
+    </header>
+    <div class="container">
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-image" style="background-image: url('html.jpg');"></div>
+                <div class="skill-content">
+                    <h2>HTML</h2>
+                    <span class="skill-level">Advanced</span>
+                    <p>Proficient in creating structured, semantic HTML5 markup. Experienced with accessibility best practices and SEO-friendly code.</p>
+                    <div class="progress-bar">
+                        <div class="progress html-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-image" style="background-image: url('css.jpg');"></div>
+                <div class="skill-content">
+                    <h2>CSS</h2>
+                    <span class="skill-level">Intermediate</span>
+                    <p>Skilled in crafting responsive layouts, animations, and modern designs. Familiar with CSS preprocessors like SASS and frameworks like Bootstrap.</p>
+                    <div class="progress-bar">
+                        <div class="progress css-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-image" style="background-image: url('python.jpg');"></div>
+                <div class="skill-content">
+                    <h2>Python</h2>
+                    <span class="skill-level">Intermediate</span>
+                    <p>Experienced in building web applications with Django, data analysis with pandas, and automation scripts. Familiar with OOP concepts and Python best practices.</p>
+                    <div class="progress-bar">
+                        <div class="progress python-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
